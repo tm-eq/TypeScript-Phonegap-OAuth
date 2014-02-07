@@ -16,22 +16,6 @@
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
   </PropertyGroup>
-  <ItemGroup>
-    <Content Include="app.css" />
-    <Content Include="default.htm" />
-    <Content Include="web.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <TypeScriptCompile Include="app.ts" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="web.Debug.config">
-      <DependentUpon>web.config</DependentUpon>
-    </None>
-    <None Include="web.Release.config">
-      <DependentUpon>web.config</DependentUpon>
-    </None>
-  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
@@ -71,5 +55,44 @@
     <TypeScriptSourceMap>false</TypeScriptSourceMap>
     <TypeScriptModuleKind>AMD</TypeScriptModuleKind>
   </PropertyGroup>
+  <ItemGroup>
+    <Content Include="config.xml" />
+    <Content Include="css\index.css" />
+    <Content Include="img\logo.png" />
+    <Content Include="index.html" />
+    <Content Include="js\index.js" />
+    <Content Include="js\jquery-1.10.1.min.js" />
+    <Content Include="res\icon\android\icon-36-ldpi.png" />
+    <Content Include="res\icon\android\icon-48-mdpi.png" />
+    <Content Include="res\icon\android\icon-72-hdpi.png" />
+    <Content Include="res\icon\android\icon-96-xhdpi.png" />
+    <Content Include="res\icon\blackberry\icon-80.png" />
+    <Content Include="res\icon\ios\icon-57-2x.png" />
+    <Content Include="res\icon\ios\icon-57.png" />
+    <Content Include="res\icon\ios\icon-72-2x.png" />
+    <Content Include="res\icon\ios\icon-72.png" />
+    <Content Include="res\icon\windows-phone\icon-173-tile.png" />
+    <Content Include="res\icon\windows-phone\icon-48.png" />
+    <Content Include="res\icon\windows-phone\icon-62-tile.png" />
+    <Content Include="res\screen\android\screen-hdpi-landscape.png" />
+    <Content Include="res\screen\android\screen-hdpi-portrait.png" />
+    <Content Include="res\screen\android\screen-ldpi-landscape.png" />
+    <Content Include="res\screen\android\screen-ldpi-portrait.png" />
+    <Content Include="res\screen\android\screen-mdpi-landscape.png" />
+    <Content Include="res\screen\android\screen-mdpi-portrait.png" />
+    <Content Include="res\screen\android\screen-xhdpi-landscape.png" />
+    <Content Include="res\screen\android\screen-xhdpi-portrait.png" />
+    <Content Include="res\screen\blackberry\screen-225.png" />
+    <Content Include="res\screen\ios\screen-ipad-landscape-2x.png" />
+    <Content Include="res\screen\ios\screen-ipad-landscape.png" />
+    <Content Include="res\screen\ios\screen-ipad-portrait-2x.png" />
+    <Content Include="res\screen\ios\screen-ipad-portrait.png" />
+    <Content Include="res\screen\ios\screen-iphone-landscape-2x.png" />
+    <Content Include="res\screen\ios\screen-iphone-landscape.png" />
+    <Content Include="res\screen\ios\screen-iphone-portrait-2x.png" />
+    <Content Include="res\screen\ios\screen-iphone-portrait-568h-2x.png" />
+    <Content Include="res\screen\ios\screen-iphone-portrait.png" />
+    <Content Include="res\screen\windows-phone\screen-portrait.jpg" />
+  </ItemGroup>
   <Import Project="$(VSToolsPath)\TypeScript\Microsoft.TypeScript.targets" Condition="Exists('$(VSToolsPath)\TypeScript\Microsoft.TypeScript.targets')" />
 </Project>
